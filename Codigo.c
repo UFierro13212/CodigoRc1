@@ -60,4 +60,22 @@ int main() {
     printf("Ingrese la cantidad de ingredientes disponibles en bodega: ");
     scanf("%d", &ingredientesDisponibles);
 
+    printf("\n=== RESUMEN DEL PEDIDO ===\n");
+
+    for (i = 0; i < cantidadPlatos; i++) {
+
+        printf("\nPlato: %s", nombres[i]);
+
+        printf("\nCantidad de platos: %d", cantidad[i]);
+
+        printf("\nIngredientes por plato: %d",
+               ingredientesPorPlato[i]);
+
+        printf("\nTiempo total: %.2f horas",
+               cantidad[i] * tiempoPorPlato[i]);
+
+        printf("\nIngredientes totales: %d\n",
+               cantidad[i] * ingredientesPorPlato[i]);
+    }
+
     
