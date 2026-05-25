@@ -78,4 +78,11 @@ int main() {
                cantidad[i] * ingredientesPorPlato[i]);
     }
 
+    printf("\nHoras necesarias: %.2f", totalHoras);
+    printf("\nHoras disponibles: %.2f", horasDisponibles);
+
+    printf("\nIngredientes necesarios: %d", totalIngredientes);
+    printf("\nIngredientes disponibles: %d\n",
+           ingredientesDisponibles);
+
     
