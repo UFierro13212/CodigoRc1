@@ -52,4 +52,12 @@ int main() {
                             (cantidad[i] * ingredientesPorPlato[i]);
     }
 
-   
+    printf("\n=== INVENTARIO ===\n");
+
+    printf("Ingrese las horas disponibles del personal: ");
+    scanf("%f", &horasDisponibles);
+
+    printf("Ingrese la cantidad de ingredientes disponibles en bodega: ");
+    scanf("%d", &ingredientesDisponibles);
+
+    
