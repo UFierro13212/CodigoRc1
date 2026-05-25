@@ -27,4 +27,29 @@ int main() {
         scanf("%d", &cantidadPlatos);
     }
 
-    
+    printf("\n--- DATOS DE LOS PLATOS ---\n");
+
+    for (i = 0; i < cantidadPlatos; i++) {
+
+        printf("\nPlato %d\n", i + 1);
+
+        printf("Nombre del plato: ");
+        scanf("%s", nombres[i]);
+
+        printf("Cuantos ingredientes lleva?: ");
+        scanf("%d", &ingredientesPorPlato[i]);
+
+        printf("Cuantos platos va a preparar?: ");
+        scanf("%d", &cantidad[i]);
+
+        printf("Tiempo de preparacion por plato en horas: ");
+        scanf("%f", &tiempoPorPlato[i]);
+
+        totalHoras = totalHoras +
+                      (cantidad[i] * tiempoPorPlato[i]);
+
+        totalIngredientes = totalIngredientes +
+                            (cantidad[i] * ingredientesPorPlato[i]);
+    }
+
+   
