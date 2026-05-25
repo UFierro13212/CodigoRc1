@@ -85,4 +85,31 @@ int main() {
     printf("\nIngredientes disponibles: %d\n",
            ingredientesDisponibles);
 
-    
+    printf("\n=== RESULTADO ===\n");
+
+    if (totalHoras <= horasDisponibles &&
+        totalIngredientes <= ingredientesDisponibles) {
+
+        printf("El contrato SI es factible.\n");
+        printf("Se puede aceptar el pedido.\n");
+
+    } else {
+
+        printf("El contrato NO es factible.\n");
+        printf("No se recomienda aceptar el pedido.\n");
+
+        if (totalHoras > horasDisponibles) {
+
+            printf("Faltan %.2f horas de trabajo.\n",
+                   totalHoras - horasDisponibles);
+        }
+
+        if (totalIngredientes > ingredientesDisponibles) {
+
+            printf("Faltan %d ingredientes.\n",
+                   totalIngredientes - ingredientesDisponibles);
+        }
+    }
+
+    return 0;
+}
